@@ -18,26 +18,12 @@
     <et-al term="et-al"/>
   </names>
 
-  <!-- Journal Title formatting -->
-  <text variable="container-title" form="short" strip-periods="true"/>
-
-  <!-- Year formatting -->
-  <date variable="issued">
-    <date-part name="year"/>
-  </date>
-
-  <!-- Volume formatting -->
-  <text variable="volume"/>
-
-  <!-- Pages formatting -->
-  <text variable="page"/>
-
-  <!-- Citation number format (superscript) -->
+  <!-- Citation number (Superscript format) -->
   <layout vertical-align="sup">
     <text variable="citation-number"/>
   </layout>
 
-  <!-- Bibliography layout -->
+  <!-- Bibliography format (just basic citation information) -->
   <layout suffix=".">
     <text variable="author" suffix=". "/>
     <text variable="container-title" suffix=". "/>
