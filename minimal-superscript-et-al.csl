@@ -12,39 +12,37 @@
     <updated>2025-04-16T00:00:00+00:00</updated>
   </info>
 
-  <style>
-    <!-- Author Formatting -->
-    <names variable="author" et-al-min="2" et-al-use-first="1">
-      <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
-      <et-al term="et-al"/>
-    </names>
+  <!-- Author -->
+  <names variable="author" et-al-min="2" et-al-use-first="1">
+    <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
+    <et-al term="et-al"/>
+  </names>
 
-    <!-- Journal Formatting -->
-    <text variable="container-title" form="short" strip-periods="true"/>
+  <!-- Journal -->
+  <text variable="container-title" form="short" strip-periods="true"/>
 
-    <!-- Year Formatting -->
-    <date variable="issued">
-      <date-part name="year"/>
-    </date>
+  <!-- Year -->
+  <date variable="issued">
+    <date-part name="year"/>
+  </date>
 
-    <!-- Volume Formatting -->
-    <text variable="volume"/>
+  <!-- Volume -->
+  <text variable="volume"/>
 
-    <!-- Pages Formatting -->
+  <!-- Pages -->
+  <text variable="page"/>
+
+  <!-- Citation Number (Superscript) -->
+  <layout vertical-align="sup">
+    <text variable="citation-number"/>
+  </layout>
+
+  <!-- Bibliography Format -->
+  <layout suffix=".">
+    <text variable="author" suffix=". "/>
+    <text variable="container-title" suffix=". "/>
+    <text variable="issued" suffix=";"/>
+    <text variable="volume" suffix=":"/>
     <text variable="page"/>
-
-    <!-- Citation Format -->
-    <layout vertical-align="sup" delimiter=",">
-      <text variable="citation-number"/>
-    </layout>
-
-    <!-- Bibliography Format -->
-    <layout suffix=".">
-      <text macro="author" suffix=". "/>
-      <text macro="journal" suffix=". "/>
-      <text macro="year" suffix=";"/>
-      <text macro="volume" suffix=":"/>
-      <text macro="pages"/>
-    </layout>
-  </style>
+  </layout>
 </style>
