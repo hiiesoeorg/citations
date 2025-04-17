@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Minimal Superscript with Et al</title>
+    <id>http://www.zotero.org/styles/minimal-superscript-et-al</id>
+    <link href="http://www.zotero.org/styles/minimal-superscript-et-al" rel="self"/>
+    <author>
+      <name>Custom by ChatGPT</name>
+    </author>
+    <category citation-format="numeric"/>
+    <category field="medicine"/>
+    <updated>2025-04-16T00:00:00+00:00</updated>
+  </info>
+  <locale xml:lang="en">
+    <terms>
+      <term name="et-al">et al</term>
+    </terms>
+  </locale>
+  <macro name="author">
+    <names variable="author" et-al-min="2" et-al-use-first="1">
+      <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
+      <et-al term="et-al" font-style="normal"/>
+    </names>
+  </macro>
+  <macro name="journal">
+    <text variable="container-title" form="short" strip-periods="true"/>
+  </macro>
+  <macro name="year">
+    <date variable="issued">
+      <date-part name="year"/>
+    </date>
+  </macro>
+  <macro name="volume">
+    <text variable="volume"/>
+  </macro>
+  <macro name="pages">
+    <text variable="page"/>
+  </macro>
+  <citation collapse="citation-number">
+    <layout vertical-align="sup" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="false">
+    <layout suffix=".">
+      <text macro="author" suffix=". "/>
+      <text macro="journal" suffix=". "/>
+      <text macro="year" suffix=";"/>
+      <text macro="volume" suffix=":"/>
+      <text macro="pages"/>
+    </layout>
+  </bibliography>
+</style>
