@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
   <info>
-    <title>Minimal Superscript with Et al</title>
-    <id>http://www.zotero.org/styles/minimal-superscript-et-al</id>
-    <link href="http://www.zotero.org/styles/minimal-superscript-et-al" rel="self"/>
+    <title>Minimal Superscript</title>
+    <id>http://www.zotero.org/styles/minimal-superscript</id>
+    <link href="http://www.zotero.org/styles/minimal-superscript" rel="self"/>
     <author>
       <name>ChatGPT Custom</name>
     </author>
     <category citation-format="numeric"/>
-    <category field="medicine"/>
-    <updated>2025-04-16T00:00:00+00:00</updated>
   </info>
 
   <!-- Author formatting -->
@@ -18,12 +16,12 @@
     <et-al term="et-al"/>
   </names>
 
-  <!-- Citation number (Superscript format) -->
+  <!-- Citation number formatting (superscript) -->
   <layout vertical-align="sup">
     <text variable="citation-number"/>
   </layout>
 
-  <!-- Bibliography format (just basic citation information) -->
+  <!-- Bibliography formatting -->
   <layout suffix=".">
     <text variable="author" suffix=". "/>
     <text variable="container-title" suffix=". "/>
