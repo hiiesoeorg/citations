@@ -18,7 +18,6 @@
     </terms>
   </locale>
 
-  <!-- Author Formatting -->
   <macro name="author">
     <names variable="author" et-al-min="2" et-al-use-first="1">
       <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
@@ -26,36 +25,30 @@
     </names>
   </macro>
 
-  <!-- Journal Formatting -->
   <macro name="journal">
     <text variable="container-title" form="short" strip-periods="true"/>
   </macro>
 
-  <!-- Year Formatting -->
   <macro name="year">
     <date variable="issued">
       <date-part name="year"/>
     </date>
   </macro>
 
-  <!-- Volume Formatting -->
   <macro name="volume">
     <text variable="volume"/>
   </macro>
 
-  <!-- Pages Formatting -->
   <macro name="pages">
     <text variable="page"/>
   </macro>
 
-  <!-- Citation Format -->
   <citation collapse="citation-number">
     <layout vertical-align="sup" delimiter=",">
       <text variable="citation-number"/>
     </layout>
   </citation>
 
-  <!-- Bibliography Format -->
   <bibliography hanging-indent="false">
     <layout suffix=".">
       <text macro="author" suffix=". "/>
