@@ -12,51 +12,33 @@
     <updated>2025-04-16T00:00:00+00:00</updated>
   </info>
 
-  <locale xml:lang="en">
-    <terms>
-      <term name="et-al">et al</term>
-    </terms>
-  </locale>
-
-  <!-- Author Formatting -->
-  <macro name="author">
+  <style>
+    <!-- Author Formatting -->
     <names variable="author" et-al-min="2" et-al-use-first="1">
       <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
       <et-al term="et-al"/>
     </names>
-  </macro>
 
-  <!-- Journal Formatting -->
-  <macro name="journal">
+    <!-- Journal Formatting -->
     <text variable="container-title" form="short" strip-periods="true"/>
-  </macro>
 
-  <!-- Year Formatting -->
-  <macro name="year">
+    <!-- Year Formatting -->
     <date variable="issued">
       <date-part name="year"/>
     </date>
-  </macro>
 
-  <!-- Volume Formatting -->
-  <macro name="volume">
+    <!-- Volume Formatting -->
     <text variable="volume"/>
-  </macro>
 
-  <!-- Pages Formatting -->
-  <macro name="pages">
+    <!-- Pages Formatting -->
     <text variable="page"/>
-  </macro>
 
-  <!-- Citation Format -->
-  <citation collapse="citation-number">
+    <!-- Citation Format -->
     <layout vertical-align="sup" delimiter=",">
       <text variable="citation-number"/>
     </layout>
-  </citation>
 
-  <!-- Bibliography Format -->
-  <bibliography hanging-indent="false">
+    <!-- Bibliography Format -->
     <layout suffix=".">
       <text macro="author" suffix=". "/>
       <text macro="journal" suffix=". "/>
@@ -64,5 +46,5 @@
       <text macro="volume" suffix=":"/>
       <text macro="pages"/>
     </layout>
-  </bibliography>
+  </style>
 </style>
