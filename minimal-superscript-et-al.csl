@@ -12,32 +12,32 @@
     <updated>2025-04-16T00:00:00+00:00</updated>
   </info>
 
-  <!-- Author -->
+  <!-- Author formatting -->
   <names variable="author" et-al-min="2" et-al-use-first="1">
     <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
     <et-al term="et-al"/>
   </names>
 
-  <!-- Journal -->
+  <!-- Journal Title formatting -->
   <text variable="container-title" form="short" strip-periods="true"/>
 
-  <!-- Year -->
+  <!-- Year formatting -->
   <date variable="issued">
     <date-part name="year"/>
   </date>
 
-  <!-- Volume -->
+  <!-- Volume formatting -->
   <text variable="volume"/>
 
-  <!-- Pages -->
+  <!-- Pages formatting -->
   <text variable="page"/>
 
-  <!-- Citation Number (Superscript) -->
+  <!-- Citation number format (superscript) -->
   <layout vertical-align="sup">
     <text variable="citation-number"/>
   </layout>
 
-  <!-- Bibliography Format -->
+  <!-- Bibliography layout -->
   <layout suffix=".">
     <text variable="author" suffix=". "/>
     <text variable="container-title" suffix=". "/>
