@@ -3,30 +3,24 @@
   <info>
     <title>Minimal Superscript</title>
     <id>http://www.zotero.org/styles/minimal-superscript</id>
-    <link href="http://www.zotero.org/styles/minimal-superscript" rel="self"/>
     <author>
       <name>ChatGPT Custom</name>
     </author>
     <category citation-format="numeric"/>
   </info>
 
-  <!-- Author formatting -->
-  <names variable="author" et-al-min="2" et-al-use-first="1">
-    <name form="short" initialize-with="" name-as-sort-order="first" delimiter=", " delimiter-precedes-last="never"/>
-    <et-al term="et-al"/>
-  </names>
-
-  <!-- Citation number formatting (superscript) -->
+  <!-- Citation Number Formatting (Superscript) -->
   <layout vertical-align="sup">
     <text variable="citation-number"/>
   </layout>
 
-  <!-- Bibliography formatting -->
-  <layout suffix=".">
-    <text variable="author" suffix=". "/>
-    <text variable="container-title" suffix=". "/>
-    <text variable="issued" suffix=";"/>
-    <text variable="volume" suffix=":"/>
+  <!-- Bibliography Format -->
+  <layout>
+    <text variable="author"/>
+    <text variable="title"/>
+    <text variable="container-title"/>
+    <text variable="issued"/>
+    <text variable="volume"/>
     <text variable="page"/>
   </layout>
 </style>
